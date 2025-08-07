@@ -1,3 +1,4 @@
+
 # 🎭 KNN Face Match Classifier
 
 This project is a hands-on implementation of the K-Nearest Neighbors (KNN) algorithm applied to face recognition. It allows users to upload an image of themselves and identifies the most visually similar actor from a dataset of 50 celebrity images using KNN-based classification.
@@ -20,16 +21,27 @@ To classify a user-uploaded face image and find the most visually similar actor/
 
 ## 📁 File Structure
 
+```
 KNN-Face-Match-Classifier/
-├── KNN.ipynb # Main Jupyter notebook with KNN implementation
-├── data.mat # Dataset file containing images and labels
-├── user_image.jpg # Your uploaded image for matching
-├── KNN_Assignment.pdf # Project instructions and background
-└── README.md # Project documentation
-
-markdown
-Copy
-Edit
+├── data/
+│   ├── data.mat                  # Provided dataset of 50 colored images (32x32x3)
+│   └── user_image.jpg            # Your own image used for matching
+│
+├── notebook/
+│   └── KNN.ipynb                 # Main Jupyter notebook for face matching using KNN
+│
+├── docs/
+│   └── KNN_Assignment.pdf        # Assignment instructions and background theory
+│
+├── outputs/
+│   ├── matched_1nn.png           # Image with closest match using 1NN
+│   ├── matched_3nn.png           # 3NN result (optional)
+│   └── matched_5nn.png           # 5NN result (optional)
+│
+├── README.md                     # Project overview, usage, and documentation
+├── requirements.txt              # List of Python packages used
+└── .gitignore                    # Optional: Ignore runtime files (e.g., checkpoints)
+```
 
 ## 🚀 How to Use
 
